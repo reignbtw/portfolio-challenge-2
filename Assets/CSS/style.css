@@ -1,0 +1,106 @@
+/* flexbox, media queries, and CSS */
+/* universal color variables */
+:root {
+    --background-color: #EABCF5;
+    --banner-color: #b5f73b;
+    --text-color: #000;
+    --navlink-color: #009C96;
+    --header-border: #000;
+    --boxshadow: #7D7D7D;
+    --link-color: #2E00FF;
+    --dividing-line: #D800FF;
+    --app-color: #00FF7C;
+}
+
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    display: inline;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+header h1 {
+    font-size: 200%;
+    border: 5px solid var(--header-border);
+    padding: 5px;
+    box-shadow: 10px 10px 10px 5px var(--boxshadow-color);
+}
+
+.hero {
+    text-outline: 5px;
+    background-image: url("https://www.oecd-nea.org/upload/docs/image/jpeg/2020-09/shutterstock_402724045.jpg");
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;  
+}
+
+.hero p {
+    font-size: 90px;
+    color: var(--banner-color);
+}
+
+.title {
+    border-right: 5px solid var(--dividing-line);
+    min-height: 100%;
+    text-align: right;
+    padding-right: 40px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    margin: 5% 0;
+    font-size: 150%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav a {
+    color: var(--navlink-color);
+    font-weight: bold;
+    margin: 20px 40px 0 0;
+    padding: 8px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px 80px 30px 50px;
+}
+
+.about-me p {
+    font-size: 20px;
+    padding-left: 80px;
+    line-height: 1.5;
+    width: 100%;
+}
